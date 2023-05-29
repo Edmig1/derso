@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Calcular Juros</title>
+</head>
+<body>
+    <header>
+        <h1>Calcular Juros</h1>
+    </header>
+    <main id="main">
+        <div class="option" id="option">
+            <button id="btnjs">Juros Simples</button>
+            <button id="btnjc">Juros Compostos</button>
+        </div>
+        <div id="divform">
+            <div class="divcontent">
+                <form action="" id="form">
+                    <div>
+                        <label id="label" for="capital">Capital em Reais</label>
+                        <input type="text" name="capital" id="capital">
+                    </div>
+
+                    <div>
+                        <label id="label" for="taxa">Taxa em Porcentagem (em meses)</label>
+                        <input type="text" name="taxa" id="taxa">
+                    </div>
+
+                    <div>
+                        <label id="label" for="tempo">Tempo em Meses</label>
+                        <input type="text" name="tempo" id="tempo">
+                    </div>
+                    <div class="divb">
+                        <button id="btn" type="submit">Enviar Informações</button>
+                        <button id="btnfechar">Fechar</button>
+                    </div>
+                </form>
+                <div class="divresult">
+                    <p id="p"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
