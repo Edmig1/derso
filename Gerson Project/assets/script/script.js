@@ -63,15 +63,15 @@ btnjurossimples.addEventListener('click', function(){
     p.innerHTML = ''
     main.style.gridTemplateColumns = '1fr 1fr'
     if( capital !== 0){
-        function valorsimples(){
+        function valorcomposto(){
             var p = document.getElementById('p')
             p.style.color = 'white'
-            var resultado = (capital*taxa)/100
+            var resultado = (capital)*(taxa/100 +1)**tempo
             var juros = resultado*tempo
             p.innerHTML = ("O valor dos Juros a serem pagos é: "+ juros)
             return juros
         }
-        valorsimples()
+        valorcomposto()
     }
     if (isNaN(capital) || isNaN(tempo) || isNaN(taxa)) {
         p.innerHTML = "Valores inválidos."
