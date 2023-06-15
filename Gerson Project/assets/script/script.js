@@ -42,7 +42,6 @@ function js(){
     rc = (resultado + capital).toFixed(2)
     valor.innerHTML = 'O Valor total a ser pago é: '+ rc + ', E o juro é: '+ r
     return resultado
-    
 }
 function jc(){
     let resultado = (((taxa/100)+1)**tempo)*capital
@@ -53,4 +52,3 @@ function jc(){
     return resultado
     
 }
-

@@ -13,9 +13,7 @@
     -webkit-text-stroke: 0.1px rgb(22, 196, 37);
 }
 main{
-    background-color: rgb(43, 7, 81);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(60, 20, 104);
     height: 100vh;
     z-index: 2;
 }
@@ -58,6 +56,10 @@ form input{
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    cursor: pointer;
+}
+#divb button:hover{
+    background: #089c08;
 }
 #radio input{
     margin: 10px 10px;
