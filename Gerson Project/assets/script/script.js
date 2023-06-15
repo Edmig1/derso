@@ -1,10 +1,10 @@
 var btn = document.getElementById('form')
 btn.addEventListener('submit', function(event){
     event.preventDefault()
-    let form = new FormData(btn)
-    let capital = parseFloat(form.get('capital'))
-    let tempo = parseFloat(form.get('tempo'))
-    let taxa =parseFloat(form.get('taxa'))
+     form = new FormData(btn)
+     capital = parseFloat(form.get('capital'))
+     tempo = parseFloat(form.get('tempo'))
+     taxa =parseFloat(form.get('taxa'))
     if( capital !== 0){
         function valorsimples(){
             var p = document.getElementById('p')
@@ -66,10 +66,9 @@ btnjurossimples.addEventListener('click', function(){
         function valorcomposto(){
             var p = document.getElementById('p')
             p.style.color = 'white'
-            var resultado = (capital)*(taxa/100 +1)**tempo
-            var juros = resultado*tempo
-            p.innerHTML = ("O valor dos Juros a serem pagos é: "+ juros)
-            return juros
+            var resultado = ((taxa/100 +1)**tempo)*capital
+            p.innerHTML = ("O valor dos Juros a serem pagos é: "+ resultado)
+            return resultado
         }
         valorcomposto()
     }
