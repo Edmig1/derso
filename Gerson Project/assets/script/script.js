@@ -32,7 +32,7 @@ btn.addEventListener('submit', function(event){
 function js(ca,ta,te){
     let resultado = ca*(ta/100)*te
     let total = resultado.toFixed(2)
-    let montante = ca + resultado
+    let montante = (ca + resultado).toFixed(2)
     let tudo = [total,montante]
     return tudo
 }
@@ -70,18 +70,19 @@ function grafico(lista) {
     for (var i = 0; i < itens; i++) {
         caixa.innerHTML += `
         <div class="coluna">
-            <p>`+lista[i]+`</p>
+            <p>R$`+lista[i]+`</p>
         </div>
         `
     }
     for (var i = 0; i < itens; i++) {
         caixa.innerHTML += `
-        <p> Mês `+i+`</p>
+        <div class="cheio">
+            <p>Mês `+i+`</p>
+        </div>
         `
     }
     caixa.style.gridTemplateColumns = 'repeat('+itens+',1fr)'
     let colunas = document.getElementsByClassName('coluna')
-    let tamanho = porcentagem
     for (var i = 0; i < colunas.length; i++) {
         colunas[i].style.height = porcentagem[i]+'%'
     }

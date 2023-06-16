@@ -87,15 +87,34 @@ form input{
 .grafico{
     width: 80%;
     height: 50vh;
-    background-color: lightblue;
+    background-color: rgb(60, 20, 104);
     display: grid;
     align-items: end;
-    gap: 8px;
     overflow-x: auto;
     overflow-y: hidden;
     margin-bottom: 32px;
+    padding: 8px;
 }
 
 .coluna {
-    background-color: blue;
+    background-color: #089c08;
+    color: white;
+    text-align: center;
+
+}
+
+.coluna p{
+    position: relative;
+}
+
+.cheio{
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-color: #089c08;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 6px;
+    padding-right: 6px;
 }
