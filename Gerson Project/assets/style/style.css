@@ -13,7 +13,7 @@
     -webkit-text-stroke: 0.1px rgb(22, 196, 37);
 }
 main{
-    background-color: rgb(60, 20, 104);
+    
     height: 100vh;
     z-index: 2;
 }
@@ -81,4 +81,40 @@ form input{
     display: flex;
     flex-direction: column  ;
     align-items: center;
+    background-color: rgb(60, 20, 104);
+}
+
+.grafico{
+    width: 80%;
+    height: 50vh;
+    background-color: rgb(60, 20, 104);
+    display: grid;
+    align-items: end;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 32px;
+    padding: 8px;
+}
+
+.coluna {
+    background-color: #089c08;
+    color: white;
+    text-align: center;
+
+}
+
+.coluna p{
+    position: relative;
+}
+
+.cheio{
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-color: #089c08;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 6px;
+    padding-right: 6px;
 }
