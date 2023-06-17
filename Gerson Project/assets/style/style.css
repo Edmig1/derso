@@ -1,44 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Nunito:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
- h1{
+
+h1 {
 
     color: transparent !important;
     font-weight: bolder;
     font-size: 3em;
     -webkit-text-stroke: 0.1px rgb(22, 196, 37);
 }
-main{
-    
+
+main {
+
     height: 100vh;
     z-index: 2;
 }
-#titulo{
+
+#titulo {
     display: flex;
     justify-content: center;
     padding-top: 100px;
 }
-#divform{
+
+#divform {
     display: flex;
     justify-content: center;
     margin: 35px;
 }
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-form label{
+
+form label {
     display: block;
     margin: 0 auto;
     color: white;
+    position: relative;
 }
-form input{
+
+label:has(+ input:focus){
+
+    font-weight: bold;
+    
+}
+
+form input {
     color: white;
     width: 300px;
     background-color: transparent !important;
@@ -46,9 +61,10 @@ form input{
     outline: none;
     border-bottom: 3px solid #0ec60e;
     border-radius: 4px;
-    margin: 5px;
+    margin-bottom: 35px;
 }
-#divb button{
+
+#divb button {
     background: #0ec60e;
     border: none;
     outline: none;
@@ -58,33 +74,38 @@ form input{
     border-radius: 10px;
     cursor: pointer;
 }
-#divb button:hover{
+
+#divb button:hover {
     background: #089c08;
 }
-#radio input{
-    margin: 10px 10px;
+
+#radio input {
+    margin: 20px 20px;
     scale: 2;
 }
-#radio{
+
+#radio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
 }
-#divalor{
+
+#divalor {
     display: flex;
     justify-content: center;
     color: white;
 }
-.tudo{
+
+.tudo {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     align-items: center;
     background-color: rgb(60, 20, 104);
 }
 
-.grafico{
+.grafico {
     width: 80%;
     height: 50vh;
     background-color: rgb(60, 20, 104);
@@ -103,11 +124,11 @@ form input{
 
 }
 
-.coluna p{
+.coluna p {
     position: relative;
 }
 
-.cheio{
+.cheio {
     height: 100%;
     color: white;
     text-align: center;
@@ -117,4 +138,66 @@ form input{
     justify-content: end;
     padding-left: 6px;
     padding-right: 6px;
+}
+
+#r1:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: 'S';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#r1:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #0ec60e;
+    content: 'S';
+    display: flex;
+    visibility: visible;
+    border: 2px solid white;
+    color: white;
+}
+
+#r2:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: 'C';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#r2:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #0ec60e;
+    content: 'C';
+    display: flex;
+    visibility: visible;
+    border: 2px solid white;
+    color: white;
 }
